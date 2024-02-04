@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        #construction-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        #construction-image {
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #construction-text {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        @keyframes machineRun {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
+
+        #machine-animation {
+            margin-top: 20px;
+            width: 100px;
+            height: 100px;
+            background: url('machine_running.gif') center/cover no-repeat; /* Replace 'machine_running.gif' with your actual image */
+            animation: machineRun 1s linear infinite;
+        }
+    </style>
+</head>
+<body>
+
+<div id="construction-container">
+    <img id="construction-image" src="under_construction.jpg" alt="Under Construction Image">
+    <div id="construction-text">
+        <p>Website Under Construction</p>
+        <div id="machine-animation"></div>
+    </div>
+</div>
+
+</body>
+</html>
